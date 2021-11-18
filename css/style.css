@@ -3,53 +3,33 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-
-.colorHeader{
-    background-color: rgb(161, 204, 182);
-    height: calc(100vh / 10);
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: coral;
 }
-main{
-    background-color: rgb(252, 238, 181);
-    height: 100vh;
-}
-
-.colorLevel{
-    background-color: rgb(161, 204, 182);
-    border: 1px solid black;
-}
-
 
 .outerSquare{
     display: flex;
     flex-wrap: wrap;
-    height: 500px;
     width: 500px;
-    border: 2px solid rgb(248, 205, 111);
+    height: 500px;
+    margin: 20px auto;
+    border: 1px solid black;
 }
-#squareEasy{
-    height: calc(100% / 10);
+
+.square{
     width: calc(100% / 10);
-    border: 2px solid rgb(248, 205, 111);
+    aspect-ratio: 1;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+    
 
-#squareMedium{
-    height: calc(100% / 9);
-    width: calc(100% / 9);
-    border: 2px solid rgb(248, 205, 111);
+.selected{
+    background-color: lightskyblue;
 }
-
-#squareHard{
-    height: calc(100% / 7);
-    width: calc(100% / 7);
-    border: 2px solid rgb(248, 205, 111);
-}
-
-/*
-Palettes Color
-161 - 204 - 182 Background Header
-252 - 238 - 181 Background Main
-239 - 120 - 110 Square without bomb
-248 - 205 - 111 Row Container
-153 - 213 - 179 Square with bomb
-*/
